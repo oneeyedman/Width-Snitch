@@ -1,4 +1,4 @@
-# Width-snitch
+# Width Snitch
 
 **Width Snitch** creates a child container just to show the browser width... That's all :)
 
