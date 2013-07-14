@@ -42,7 +42,8 @@ I like to use a development class ('dev') just in case I forget to remove both t
 | *style* | Object | (Optional) Styles can be defined through the `style` option or inside the main css file. It's up to you. |
 
 ## Demo
-* [See it in action at sidiostedalimones.com](http://www.sidiostedalimones.com/_projects/width-snitch/demo.html)  
+* [See it in action at sidiostedalimones.com](http://www.sidiostedalimones.com/_projects/width-snitch/demo.html)
+
 ## License
 Really?? 
 
