@@ -15,7 +15,7 @@ Include script file after the jQuery library
 
 ## Usage
 Call the `width_snitch` method on the body element.  
-I like to use a development class ('dev') just in case I forget to remove both the plugin and the js code before uploading/delivering… You know, sometimes it happens…
+I like using a development class ('dev') just in case I forget to remove both the plugin and the js code before uploading/delivering… You know, sometimes it happens…
 
 
   $('body.dev').width_snitch({
