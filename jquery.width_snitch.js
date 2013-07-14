@@ -20,13 +20,8 @@
 
 		this.each(function() {
 
-			if (settings.className){
 				$(this).prepend('<div class="' + settings.className + '"></div>');
 				$('.' + settings.className).text($(window).width() + ' px');
-
-				if ( settings.color ) {
-					$('.' + settings.className).css('color', settings.color );
-				}
 
 				if ( settings.style ) {
 					$('.' + settings.className).css( settings.style );
@@ -35,7 +30,6 @@
 				$(window).resize(function() {
 					$('.' + settings.className).text($(window).width() + ' px');
 				});
-			}
 
 		});
 
