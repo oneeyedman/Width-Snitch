@@ -2,7 +2,7 @@
 
 **Width Snitch** creates a child container just to show the browser width... That's all :)
 
-I know, I know, it is pretty simple... It is really an excersise: my first plugin :)
+I know, I know, it is pretty simple, but this is what I need to work with mediaqueries.
 
 ## Requirements
 * Jquery
