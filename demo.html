@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Width Snitch Demo</title>
+	<style>
+		body{margin:0;}
+		.wrapper{
+			margin:0 auto;
+			max-width:1000px;
+			}
+		#header{border-bottom:1px solid #ccc;}
+		#header h1{text-align:center;}
+		#footer{
+			border-top:1px dashed #ccc;
+			text-align:center;
+		}
+		#footer a{color:#c4c4c4;}
+	</style>
+</head>
+<body class="dev">
+	<div class="wrapper">
+		<header id="header">
+			<h1>Plugin demo</h1>
+		</header>
+		<article id="main">
+			<h2>Repellendus, porro, eius!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, doloribus, fuga dicta atque velit nisi fugit sunt ipsa a adipisci nostrum maiores eos accusantium eius aut? Soluta ad veniam mollitia.</p>
+			<p>Mollitia, ipsa, incidunt et accusamus dolores iure omnis rem id. Placeat, corporis, magni, enim totam in odit quos facere unde incidunt quidem at earum sunt nulla dolorum quas debitis eligendi.</p>
+			<p>Fugiat, eos, cumque, ut repellendus maiores harum possimus tempora esse velit dolorem quo consectetur sint at adipisci enim vel quas ipsa. Corrupti, aliquam, perferendis ipsa veniam dolores rem incidunt officiis.</p>
+		</article>
+		<footer id="footer">
+			<p><a href="">Item01</a> · <a href="">Item02</a> · <a href="">Item03</a></p>
+		</footer>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="jquery.width_snitch.min.js"></script>
+	<style>
+	</style>
+	<script>
+		$(document).ready(function() {
+
+			$('body.dev').width_snitch({
+				className: 'width_snitch',
+				style: {
+					'background': 'rgba(0,0,0,.8)',
+					'border':'none',
+					'border-radius': '5px',
+					'box-shadow' : '0 1px 5px rgba(0, 0, 0, .3)',
+					'color': '#fff',
+					'font' : '1.5em arial, sans-serif',
+					'left':'.5em',
+					'padding': '.5em 1em',
+					'position': 'fixed',
+					'top': '.5em',
+					'z-index': '666'
+				}
+			});
+		});
+	</script>
+</body>
+</html>
