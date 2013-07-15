@@ -17,23 +17,24 @@ Include script file after the jQuery library
 Call the `width_snitch` method on the body element.  
 I like using a development class ('dev') just in case I forget to remove both the plugin and the js code before uploading/delivering… You know, sometimes it happens…
 
-
-  $('body.dev').width_snitch({
-    className: 'width_snitch',
-    style: {
-      'background': 'rgba(0,0,0,.8)',
-      'border':'none',
-      'border-radius': '5px',
-      'box-shadow' : '0 1px 5px rgba(0, 0, 0, .3)',
-      'color': '#fff',
-      'font' : '1.5em arial, sans-serif',
-      'left':'.5em',
-      'padding': '.5em 1em',
-      'position': 'fixed',
-      'top': '.5em',
-      'z-index': '666'
-    }
-  });
+```JavaScript
+$('body.dev').width_snitch({
+  className: 'width_snitch',
+  style: {
+    'background': 'rgba(0,0,0,.8)',
+    'border':'none',
+    'border-radius': '5px',
+    'box-shadow' : '0 1px 5px rgba(0, 0, 0, .3)',
+    'color': '#fff',
+    'font' : '1.5em arial, sans-serif',
+    'left':'.5em',
+    'padding': '.5em 1em',
+    'position': 'fixed',
+    'top': '.5em',
+    'z-index': '666'
+  }
+});
+```
 
 ### Options
 | Option | Type | Description   |
