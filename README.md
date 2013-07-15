@@ -39,7 +39,7 @@ $('body.dev').width_snitch({
 ### Options
 | Option | Type | Description   |
 | ------ | ---- | ------------- |
-| *className* | String | (Optional) The class name of the width container. `snitch` will be used as default class name. |
+| *className* | String | (Optional) The class name of the width container, `snitch` will be used as default class name. |
 | *style* | Object | (Optional) Styles can be defined through the `style` option or inside the main css file. It's up to you. |
 
 ## Demo
