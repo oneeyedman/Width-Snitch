@@ -18,17 +18,37 @@
 			}
 		}, options);
 
+		var element_checker = function() {
+			var
+				checker_status = true,
+				body_width = $( window ).width();
+			$( 'body' ).find( '*' ).each(function(index, el) {
+				if ( $(this).width() > body_width ) {
+					$(this).addClass( 'snitch_bad_boy' );
+					checker_status = false;
+				} else {
+					$(this).removeClass( 'snitch_bad_boy' );
+				}
+			});
+			if ( checker_status ) {
+				return 'OK';
+			} else {
+				return 'KO';
+			}
+
+		};
+
 		this.each(function() {
 
 				$(this).prepend('<div class="' + settings.className + '"></div>');
-				$('.' + settings.className).text($(window).width() + ' px');
+				$('.' + settings.className).text($(window).width() + ' px | ' + element_checker() );
 
 				if ( settings.style ) {
 					$('.' + settings.className).css( settings.style );
 				}
 
 				$(window).resize(function() {
-					$('.' + settings.className).text($(window).width() + ' px');
+					$('.' + settings.className).text($(window).width() + ' px | ' + element_checker() );
 				});
 
 		});
