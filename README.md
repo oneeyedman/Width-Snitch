@@ -9,7 +9,7 @@ I know, I know, it is pretty simple, but this is what I need to work with mediaq
 
 ## Installation
 
-Include script file after the jQuery library 
+Include the script file after the jQuery library 
 
   <script src="/path/to/jquery.width_snitch.min.js"></script>
 
