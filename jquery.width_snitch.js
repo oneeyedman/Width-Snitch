@@ -15,40 +15,45 @@
 			'position': 'fixed',
 			'top': '10px',
 			'z-index': '666'
-			}
+			},
 		}, options);
 
 		var element_checker = function() {
 			var
+				checker_count = 0,
 				checker_status = true,
+				checker_class = 'snitch_check_status_',
+				checker_text = 'ok',
 				body_width = $( window ).width();
 			$( 'body' ).find( '*' ).each(function(index, el) {
 				if ( $(this).width() > body_width ) {
 					$(this).addClass( 'snitch_bad_boy' );
 					checker_status = false;
+					checker_count++;
 				} else {
 					$(this).removeClass( 'snitch_bad_boy' );
 				}
 			});
 			if ( checker_status ) {
-				return 'OK';
-			} else {
-				return 'KO';
-			}
+				checker_text = 'ok';
 
+			} else {
+				checker_text = 'ko';
+			}
+			return '<span class="' + checker_class + checker_text + '"><i class="snitch_check_ico">' + checker_text + ':</i>' + checker_count + '</span>';
 		};
 
 		this.each(function() {
 
 				$(this).prepend('<div class="' + settings.className + '"></div>');
-				$('.' + settings.className).text($(window).width() + ' px | ' + element_checker() );
+				$('.' + settings.className).html($(window).width() + ' px ' + element_checker() );
 
 				if ( settings.style ) {
 					$('.' + settings.className).css( settings.style );
 				}
 
 				$(window).resize(function() {
-					$('.' + settings.className).text($(window).width() + ' px | ' + element_checker() );
+					$('.' + settings.className).html($(window).width() + ' px ' + element_checker() );
 				});
 
 		});
