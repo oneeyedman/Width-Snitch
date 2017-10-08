@@ -1,4 +1,4 @@
-![Width Snitch logo](https://photos-2.dropbox.com/t/2/AAB28sbRfd38NHxeASIvcXkDjBcsJnL-FhnmYNo2b-XX2A/12/381855/png/32x32/1/_/1/2/width-snitch-icon.png/EL-lPhjtp6D3AyAHKAc/eOOx8faKhbcCnOwCiL2451J9C62KLOeIMAxHCS9UB9s?size=1600x1200&size_mode=3)
+![Width Snitch logo](https://spacenomads.com/assets/img/projects/width-snitch/width-snitch-icon.png)
 
 **Width Snitch** creates a child container just to show the browser width... That's all :)
 
