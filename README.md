@@ -1,4 +1,4 @@
-![Width Snitch logo](https://dl.dropboxusercontent.com/u/381855/width-snitch-icon.png)
+![Width Snitch logo](width-snitch-icon.png)
 
 **Width Snitch** creates a child container just to show the browser width... That's all :)
 
