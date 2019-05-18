@@ -5,15 +5,19 @@
 I know, I know, it is pretty simple, but this is what I need to work with mediaqueries.
 
 ## Requirements
+
 * Jquery
 
 ## Installation
 
 Include the script file after the jQuery library 
 
+```html
   <script src="/path/to/jquery.width_snitch.min.js"></script>
+```
 
 ## Usage
+
 Call the `width_snitch` method on the body element.  
 I like using a development class ('dev') just in case I forget to remove both the plugin and the js code before uploading/delivering… You know, sometimes it happens…
 
@@ -43,6 +47,7 @@ $('body.dev').width_snitch({
 | *style* | Object | (Optional) Styles can be defined through the `style` option or inside the main css file. It's up to you. |
 
 ## Demo
+
 * [See it in action at sidiostedalimones.com](http://www.sidiostedalimones.com/_projects/width-snitch/demo.html)
 
 
