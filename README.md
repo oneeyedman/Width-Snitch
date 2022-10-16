@@ -1,43 +1,41 @@
 ![Width Snitch logo](./assets/img/width-snitch-icon.png)
 
-**Width Snitch** creates a child container just to show the browser width... That's all :)
+**Width Snitch** creates a child container just to show the `<body>` width and its content width (if they are different). That's all :)
 
 I know, I know, it is pretty simple, but this is what I need to work with media queries.
 
-## Requirements
-
-* Jquery
-
-## Installation
-
-Include the script file after the jQuery library 
-
-```html
-  <script src="/path/to/jquery.width_snitch.min.js"></script>
-```
 
 ## Usage
 
-Call the `width_snitch` method on the body element.  
+Create a new instance of `widthSnitch` object.
 I like using a development class ('dev') just in case I forget to remove both the plugin and the js code before uploading/delivering… You know, sometimes it happens…
 
-```JavaScript
-$('body.dev').width_snitch({
-  className: 'width_snitch',
-  style: {
-    'background': 'rgba(0,0,0,.8)',
-    'border':'none',
-    'border-radius': '5px',
-    'box-shadow' : '0 1px 5px rgba(0, 0, 0, .3)',
-    'color': '#fff',
-    'font' : '1.5em arial, sans-serif',
-    'left':'.5em',
-    'padding': '.5em 1em',
-    'position': 'fixed',
-    'top': '.5em',
-    'z-index': '666'
-  }
-});
+```html
+<script src="js/width-snitch.min.js" defer></script>
+<script defer>
+	window.addEventListener('load', () => {
+		const isDev = document.querySelector('body').classList.contains('dev');
+
+		if (isDev) {
+			const wsSettings = {
+				style: {
+					backgroundColor: 'rgba(0,0,0,.8)',
+					border: 'none',
+					borderRadius: '5px',
+					boxShadow: '0 1px 5px rgba(0, 0, 0, .3)',
+					color: '#fff',
+					font: '1em arial, sans-serif',
+					padding: '.5em 1em',
+					position: 'fixed',
+					right: '.5em',
+					top: '.5em',
+					zIndex: '666',
+				}
+			};
+			const ws = new widthSnitch(wsSettings);
+		}
+	});
+</script>
 ```
 
 ### Options
@@ -53,4 +51,4 @@ $('body.dev').width_snitch({
 
 
 ## License
-Really??
+[The Unlicense](LICENSE.txt)
