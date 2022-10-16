@@ -47,7 +47,7 @@ I like using a development class ('dev') just in case I forget to remove both th
 
 ## Demo
 
-* [See it in action at sidiostedalimones.com](http://www.sidiostedalimones.com/_projects/width-snitch/demo.html)
+* [See it in action](https://oneeyedman.github.io/Width-Snitch/)
 
 
 ## License
