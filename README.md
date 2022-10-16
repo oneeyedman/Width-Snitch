@@ -1,8 +1,8 @@
-![Width Snitch logo](width-snitch-icon.png)
+![Width Snitch logo](./assets/img/width-snitch-icon.png)
 
 **Width Snitch** creates a child container just to show the browser width... That's all :)
 
-I know, I know, it is pretty simple, but this is what I need to work with mediaqueries.
+I know, I know, it is pretty simple, but this is what I need to work with media queries.
 
 ## Requirements
 
@@ -41,6 +41,7 @@ $('body.dev').width_snitch({
 ```
 
 ### Options
+
 | Option | Type | Description   |
 | ------ | ---- | ------------- |
 | *className* | String | (Optional) The class name of the width container, `snitch` will be used as default class name. |
